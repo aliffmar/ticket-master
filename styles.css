@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;900&display=swap");
+body {
+  background: black;
+  font-family: "Kanit", sans-serif;
+}
+
+#map {
+  height: 90vh;
+}
+
+.event-container {
+  max-height: 90vh;
+  overflow: auto;
+  margin-right: 9px;
+}
+
+.event {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e8e8e8;
+  color: #00303f;
+  margin-bottom: 10px;
+}
+
+.event img {
+  width: 300px;
+  height: 200px;
+}
+
+#filterIcon {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.badge {
+  margin-right: 5px;
+  background-color: #c0d6df;
+}
+
+.navbar {
+  background-color: #dd6e42 !important;
+}
+.eventNav {
+  color: #e8dab2;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#filterIcon,
+#clearFilter {
+  background-color: #4f6d7a;
+  color: #e8dab2;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#eventFilter {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #e8e8e8;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 20px;
+  color: #00303f;
+}
+
+.event-container {
+  max-height: 70vh;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.event {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e8e8e8;
+  color: #00303f;
+  margin: 5px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .event-container {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .event {
+    width: 100%;
+  }
+}
+
+/* Modal Styles */
+#eventModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  top: 10%;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
